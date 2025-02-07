@@ -1,6 +1,5 @@
 
 //React
-import { View, Text } from 'react-native'
 import React from 'react'
 
 //Estilos
@@ -9,7 +8,7 @@ import "../global.css";
 //Pantallas
 
 //Acciones
-import { NowPlayingAction } from '@/core/actions/movies/now-playing.action';
+import { NowPlayingMoviesAction } from '@/core/actions/movies/now-playing.action';
 
 //Librerias
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -20,7 +19,7 @@ const queryClient = new QueryClient()
 
 const RootLayout = () => {
 
-  NowPlayingAction();
+  NowPlayingMoviesAction();
   return (
     <QueryClientProvider client={queryClient}>
       <Stack 

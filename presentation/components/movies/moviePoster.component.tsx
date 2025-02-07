@@ -1,4 +1,5 @@
-import { View, Text, Pressable, Image } from 'react-native'
+//React
+import { Pressable, Image } from 'react-native'
 import React from 'react'
 
 interface MoviePosterComponentProps {
@@ -16,7 +17,7 @@ const MoviePosterComponent = ({ id, poster, smallPoster = false, className }:Mov
       <Image 
       source={{ uri:poster }} 
       className='shadow-lg rounded-2xl w-full h-full' 
-      style={{ width:smallPoster ? 85 : 150, height:smallPoster ? 130 : 250 }}
+      style={{ width:smallPoster ? 80 : 150, height:smallPoster ? 120 : 250 }}
       resizeMode='cover'
       />
     </Pressable>
