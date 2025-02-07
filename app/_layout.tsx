@@ -12,13 +12,7 @@ import "../global.css";
 import { NowPlayingAction } from '@/core/actions/movies/now-playing.action';
 
 //Librerias
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from '@tanstack/react-query'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Stack } from 'expo-router';
 
 // Create a client
